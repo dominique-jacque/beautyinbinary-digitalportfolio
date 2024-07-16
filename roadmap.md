@@ -1,4 +1,27 @@
-Phase 1: Set Up AWS Services
+# BeautyInBinary Digital Portfolio Project
+
+## Table of Contents
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+
+## Architecture 
+
+The architecture consists of the following components: 
+- **AWS S3**
+- **Amazon CloudFront**
+- **AWS Route 53**
+- **AWS Certificate Manager**
+- **AWS Lambda**
+- **Amazon API Gateway**
+- **Amazon DynamoDB**
+- **AWS IAM**
+- **AWS CloudFormation**
+- **CloudWatch**
+- 
+## Set Up
+
+### Phase 1: Set Up AWS Services
 
 Step 1: Set Up an S3 Bucket:
 
@@ -20,7 +43,7 @@ Step 4: Set Up AWS RDS or DynamoDB:
 If you need a database, set up Amazon RDS (for relational databases) or DynamoDB (for NoSQL databases).
 
 
-Phase 2: Connect AWS Services to Your Squarespace Website.
+### Phase 2: Connect AWS Services to Your Squarespace Website.
 
 Step 1: Embed Static Content from S3:
 
@@ -41,7 +64,7 @@ Step 4: Connect to AWS RDS or DynamoDB:
 If your site needs to fetch data from a database, set up an API (using Lambda and API Gateway) that interacts with your RDS or DynamoDB instance.
 Call this API from your Squarespace site using JavaScript in a Code Block.
 
-Phase 3: Secure Your Integrations
+### Phase 3: Secure Your Integrations
 Step 1: Use IAM Roles and Policies:
 
 Ensure your AWS resources are secured using IAM roles and policies. Only give necessary permissions to each service.
